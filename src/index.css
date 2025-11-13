@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Security-focused professional dark theme */
+    --background: 220 26% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 20% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 20% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Primary: Deep security blue */
+    --primary: 217 91% 60%;
+    --primary-foreground: 220 26% 6%;
+    --primary-glow: 217 91% 70%;
+
+    /* Secondary: Darker blue */
+    --secondary: 220 20% 15%;
+    --secondary-foreground: 210 40% 98%;
+
+    /* Muted elements */
+    --muted: 220 15% 20%;
+    --muted-foreground: 215 20% 65%;
+
+    /* Accent: Bright cyan for CTAs */
+    --accent: 189 90% 55%;
+    --accent-foreground: 220 26% 6%;
+    --accent-glow: 189 90% 65%;
+
+    /* Success: Secure green */
+    --success: 142 76% 45%;
+    --success-foreground: 210 40% 98%;
+
+    /* Warning */
+    --warning: 38 92% 50%;
+    --warning-foreground: 220 26% 6%;
+
+    /* Destructive: Error red */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    /* Custom security theme gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 70%));
+    --gradient-dark: linear-gradient(180deg, hsl(220 26% 6%), hsl(220 26% 8%));
+    --gradient-card: linear-gradient(135deg, hsl(220 20% 10%), hsl(220 20% 12%));
+    
+    /* Security glow effects */
+    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.3);
+    --shadow-accent-glow: 0 0 30px hsl(189 90% 55% / 0.3);
+    --shadow-card: 0 10px 30px hsl(220 26% 6% / 0.5);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
