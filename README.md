@@ -37,7 +37,7 @@ This project is a comprehensive demonstration of web application security best p
 - **React Hook Form** - Form state management
 - **Zod** - Schema validation
 
-### Backend (Lovable Cloud)
+### Backend (superbase)
 - **PostgreSQL** - Relational database with RLS (Row Level Security)
 - **Supabase Auth** - Authentication service with bcrypt password hashing
 - **Edge Functions** - Serverless backend logic (if needed)
